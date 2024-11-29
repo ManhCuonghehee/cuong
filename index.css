@@ -4,47 +4,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 10px;
-    margin-top: 20px;
-}
-
-footer .footer-container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-footer h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-footer p {
-    margin: 5px 0;
-    font-size: 16px;
-}
-
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    font-size: 1em; 
+    font-size: 1em;
 }
 
 header {
-    background-image: url('https://www.shutterstock.com/image-vector/fast-food-related-icon-crayon-260nw-2537378393.jpg');
+    background-color: #ddd;
     color: #000000;
-    padding: 6em ;
+    padding: 6em;
     text-align: center;
     position: relative;
     background-size: cover;
-    
 }
-
 
 header h1 {
     font-size: 4em;
@@ -68,58 +43,35 @@ nav a:hover {
     color: #ff0;
 }
 
-.auth {
-    position: absolute;
-    top: 1em;
-    right: 2em;
-}
-
-.auth button {
-    background-color: #444;
-    color: #fff;
-    border: none;
-    padding: 0.5em 1em;
-    margin-left: 0.5em;
-    border-radius: 0.25em;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1em;
-    transition: background-color 0.3s;
-}
-
-.auth button:hover {
-    background-color: #e67e22;
-}
-
 .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 2em;
     justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
     background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-food-overlooking-the-background-banner-image_138613.jpg');
-    text-align: center;
-    position: relative;
     background-size: cover;
+    position: relative;
 }
 
 .product {
     background-color: #fff;
     border: 0.1em solid #ddd;
     border-radius: 0.5em;
-    width: 12.5em;
-    margin: 1em;
+    width: 250px; 
+    margin: 10px;
     text-align: center;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
-}
-
-.product:hover {
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .product img {
     width: 100%;
-    height: auto;
+    height: 180px;
+    object-fit: cover; 
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
 }
@@ -127,33 +79,66 @@ nav a:hover {
 .product h2 {
     font-size: 1.2em;
     color: #333;
-    padding: 0.5em;
+    margin: 10px 0;
 }
 
 .product p {
     color: #888;
     font-size: 0.9em;
-    padding: 0.5em;
+    margin: 5px 0;
 }
 
 .product .price {
     font-size: 1.2em;
     color: #e67e22;
     font-weight: bold;
-    padding: 0.5em;
+    margin: 10px 0;
 }
 
 .product button {
     background-color: #e67e22;
     color: #fff;
     border: none;
-    padding: 0.5em 1em;
+    padding: 10px;
     border-radius: 0.25em;
     cursor: pointer;
-    margin-bottom: 1em;
     font-size: 1em;
+    margin-top: 10px;
 }
 
 .product button:hover {
     background-color: #d35400;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+
+footer .footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
