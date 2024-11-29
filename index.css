@@ -36,9 +36,9 @@ body {
 }
 
 header {
-    background-image: url('https://images.pexels.com/photos/551991/pexels-photo-551991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://www.shutterstock.com/image-vector/fast-food-related-icon-crayon-260nw-2537378393.jpg');
     color: #000000;
-    padding: 4em ;
+    padding: 6em ;
     text-align: center;
     position: relative;
     background-size: cover;
@@ -47,7 +47,7 @@ header {
 
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 4em;
 }
 
 nav {
@@ -96,6 +96,10 @@ nav a:hover {
     flex-wrap: wrap;
     padding: 2em;
     justify-content: space-around;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-food-overlooking-the-background-banner-image_138613.jpg');
+    text-align: center;
+    position: relative;
+    background-size: cover;
 }
 
 .product {
